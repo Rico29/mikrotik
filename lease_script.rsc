@@ -11,7 +11,7 @@ chain=forward \
 src-mac-address=$leaseActMAC \
 src-address=$leaseActIP \
 action=accept \
-comment="FTTH AT-infra mac $leaseActMAC" \
+comment="FTTH user mac $leaseActMAC" \
 place-before= [find comment~"^FTTH RULES end marker"]
 	return;
 }
